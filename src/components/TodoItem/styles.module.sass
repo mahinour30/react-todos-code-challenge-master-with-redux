@@ -1,0 +1,63 @@
+.card
+    box-sizing: border-box
+    width: 100%
+    padding: 10px 10px
+    background-color: #eee
+    margin-bottom : 25px
+    
+    
+
+
+.input
+    box-sizing: border-box
+    width: 35%
+    padding: 10px 10px
+    font-size: 1rem
+    margin-left: 25px
+    margin-right: 25px
+    border: 1px solid #888
+
+
+.title
+    font-family: sans-serif
+    margin-left: 25px
+    margin-right: 25px
+    font-size: 1rem
+    
+.completed
+    font-family: sans-serif
+    text-decoration: line-through
+    opacity: 0.5
+    margin-left: 25px
+    margin-right: 25px
+    font-size: 1rem
+
+@mixin button()
+    display: inline-block
+    padding: 10px 20px
+    border-radius: 10px
+    border: 0
+    margin-right: 20px
+    font-size: 1rem
+    &:last-child
+        margin-right: 0
+
+.completeBtn
+    @include button()
+    background-color: #0a0
+    color: #fff
+
+.deleteBtn
+    @include button()
+    background-color: #a00
+    color: #fff
+
+.editBtn
+    @include button()
+    background-color: #00a
+    color: #fff
+
+
+    
+
+
